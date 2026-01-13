@@ -1,0 +1,16 @@
+function update(previewPic) {
+    // kiểm tra sự kiện
+    // console.log("Hover triggered");
+    // console.log(previewPic.alt);
+    // console.log(previewPic.src);
+
+    const imageDiv = document.getElementById("image");
+    imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
+    imageDiv.textContent = previewPic.alt;
+}
+
+function unDo() {
+    const imageDiv = document.getElementById("image");
+    imageDiv.style.backgroundImage = "url('')";
+    imageDiv.textContent = "Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.";
+}
